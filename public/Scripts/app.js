@@ -3,7 +3,7 @@
 
     function Start()
     {
-        console.log("App Started...");
+        console.log("App has been Started...");
     }
 
     window.addEventListener("load", Start);

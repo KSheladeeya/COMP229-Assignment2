@@ -1,7 +1,7 @@
 {
   "name": "comp229-f2020-week3",
   "version": "0.0.2",
-  "private":false,
+  "private":true,
   "scripts": {
     "start": "node ./server.js"
   },

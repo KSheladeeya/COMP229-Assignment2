@@ -1,39 +1,33 @@
+<!--
+
+* File name: index.ejs
+* Student name: Keyur Sheladeeya
+* Student Id: 301167493
+* Date: 12-02-2021 (DD-MM-YYYY)
+
+-->
+
 <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
   
 
   <!-- Main Content -->
-  <div class="container" style="margin-bottom: 100px;">
+  <div class="container" style="margin-bottom: 100px;"> <!--class container start -->
     <div class="jumbotron">
       <h1 class="display-4"><% if (title == "Home"){ %>
-        Welcome to My portfolio website
+        Welcome To My Portfolio Website
         <% } else { %> <%= title %> <% } %> </h1>
     </div>
-    <% if (title == "Home"){ %>
-      <div class="container">
-        <p>First Name: <%= firstName %></p>
-        <p>Last Name: <%= lastName %></p>
-        <p>Contact Number: <%= contactNumber %></p>
-        <p>Email Address: <%= emailId %></p>
-        <p>Message: <%= message %></p>
-        <a href="/about" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">About Me</a>
-        <a href="/services" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Our Services</a>
-      </div>  
-    <% } %>
-  
-    <!-- About me page content 
-    <% if (title == "About Me") { %>
-        <img  src="Assets/images/profile_photo.jpg" 
-        alt="Keyur Sheladeeya" style="width:25%;height:25%;"><br><br>
-        <h2>Hello! My name is Keyur Sheladeeya</h2>
-        <p>I am a student at centennial college and I am in the course of Software 
-          Engineering Technology - Artificial Intelligence. 
-          Currently, Doing online strudy from my Home country and I am from India. </p>
-    <% } %>-->
     
+    <!--Home page content -->
+    <%- include partials/home_page.ejs %>
+
     <!--About me page content-->
     <%- include partials/about_me.ejs %>
+
+    <!-- Projects page content -->
+    <%- include partials/projects.ejs %>
 
     <!--Services page content-->
     <%- include partials/services.ejs %>

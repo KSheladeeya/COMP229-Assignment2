@@ -1,16 +1,38 @@
-<!-- About me page content -->
-    <% if (title == "About Me") { %>
-      <div class="row d-flex justify-content-center">
-        <div class="card text-center" style="width: 18rem;">
-          <img src="Assets/images/profile_photo.jpg" class="card-img-top" alt="Keyur Sheladeeya">
-          <div class="card-body">
-            <h5 class="card-title">Hello!! My name is Keyur Sheladeeya</h5>
-            <p class="card-text">I am a student at centennial college and I am in the course of Software 
-              Engineering Technology - Artificial Intelligence. 
-              Currently, Doing online strudy from my Home country and I am from India. I have completed
-              my bachelor's in Computer Engineering from Government Engineering College, Modasa.</p>
-            <a href="/services" class="btn btn-primary">Check Out Our Services</a>
-          </div>
-        </div>
+<!--
+
+* File name: about_me.ejs
+* Student name: Keyur Sheladeeya
+* Student Id: 301167493
+* Date: 12-02-2021 (DD-MM-YYYY)
+
+-->
+
+
+<!--About me page content -->
+<% if (title == "About Me") { %>
+  <div class="card mb-3" style="max-width: fit-content">
+      <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="Assets/images/profile_photo.jpg"
+                alt="Keyur Sheladeeya's Profile"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Hello!! My name is Keyur Sheladeeya</h5>
+                <p class="card-text">
+                  I am a student at centennial college and I am in the course of Software 
+                      Engineering Technology - Artificial Intelligence. This is my first semester and 
+                      I am doing online study from my Home country and I am from India. I have completed
+                      my bachelor's in Computer Engineering from India.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Nice to meet you !</small>
+                </p>
+              </div>
+            </div>
       </div>
-    <% } %>
+  </div>
+ <% } %>

@@ -1,0 +1,44 @@
+<!--
+
+* File name: home_page.ejs
+* Student name: Keyur Sheladeeya
+* Student Id: 301167493
+* Date: 12-02-2021 (DD-MM-YYYY)
+
+-->
+
+<% if (title == "Home"){ %>
+      <div class="container">
+        <div class="row contact-detail">
+          <div class="col-sm-6">
+            <span><b>First Name: </b><%= firstName %></span>
+          </div>
+          <div class="col-sm-6">
+            <span><b>Last Name:</b> <%= lastName %></span>
+          </div>
+        </div>
+
+        <div class="row contact-detail">
+          <div class="col-sm-6">
+            <span><b>Contact Number: </b><%= contactNumber %></span>
+          </div>
+          <div class="col-sm-6">
+            <span><b>Email Address:</b> <%= emailId %></span>
+          </div>
+        </div>
+
+        <div class="row contact-detail">
+          <div class="col-sm-12">
+            <p><span><b>Message: </b></span><%= message %></p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <a href="/about" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">About Me</a>
+            <a href="/services" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Our Services</a>
+          </div>
+        </div>
+        
+      </div>  
+    <% } %>

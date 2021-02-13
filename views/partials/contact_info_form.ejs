@@ -1,3 +1,11 @@
+<!--
+
+* File name: contact_info_form.ejs
+* Student name: Keyur Sheladeeya
+* Student Id: 301167493
+* Date: 12-02-2021 (DD-MM-YYYY)
+
+--> 
 
 <!-- Contact form -->
     <% if (title == "Contact Us"){ %>
@@ -6,7 +14,6 @@
         
         <div class="form-group">
           <label for="fname">First Name:</label>
-          <!-- what's the purpose of name="fname" -->
           <input type="text" class="form-control" id="fname" placeholder="Enter Your First Name" name="fname" required> 
         </div>
         
@@ -27,7 +34,7 @@
 
         <div class="form-group">
           <label for="msg">Message:</label>
-          <textarea class="form-control" id="msg" rows="3"></textarea>
+          <textarea class="form-control" id="msg" name="msg" rows="3"></textarea>
           <!--<input type="text" class="form-control" id="msg" placeholder="Drop a message here" name="msg">-->
         </div>
     
