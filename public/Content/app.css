@@ -1,1 +1,7 @@
 /* custom css goes here */
+
+
+.card .card-img-top {height:150px;}
+.project-div {padding-left:50px;}
+.contact-detail {margin:15px 0 15px 0}
+.card .card-img-top.happiness {height: 340px;}

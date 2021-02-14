@@ -1,3 +1,4 @@
+
 {
   "name": "comp229-w21-myportfolioapp",
   "version": "0.0.2",
@@ -22,7 +23,7 @@
     "popper.js": "^1.16.1"
   },
   "description": "My portfolio website for COMP229",
-  "main": "index.js",
+  "main": "server.js",
   "devDependencies": {},
   "repository": {
     "type": "git",

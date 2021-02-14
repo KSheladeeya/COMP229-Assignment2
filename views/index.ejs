@@ -17,7 +17,7 @@
     <div class="jumbotron">
       <h1 class="display-4"><% if (title == "Home"){ %>
         Welcome To My Portfolio Website
-        <% } else { %> <%= title %> <% } %> </h1>
+        <% } else { %> <%= title %> <% } %> </h1> <!-- condition for different msg for different pages -->
     </div>
     
     <!--Home page content -->
@@ -36,9 +36,11 @@
     <%- include partials/contact_info_form.ejs %>
     
 </div><!-- container class end-->
-  
+
+<!-- bottom navigation -->
 <%- include partials/bottom_nav.ejs %>
 
+<!-- html footer section-->
 <%- include partials/footer.ejs %>
   
 

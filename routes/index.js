@@ -11,11 +11,12 @@
 var express = require('express');
 var router = express.Router();
 
-let firstName = '';
-let lastName = '';
-let contactNumber = '';
-let emailId = '';
-let message = '';
+/* default values for first time home page */
+let firstName = 'Keyur';
+let lastName = 'Sheladeeya';
+let contactNumber = '+91 9725676845';
+let emailId = 'kshelade@my.centennialcollege.ca';
+let message = 'Be happy for this moment !!';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
