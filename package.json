@@ -1,4 +1,3 @@
-
 {
   "name": "comp229-w21-myportfolioapp",
   "version": "0.0.2",
@@ -19,12 +18,12 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jquery": "^3.5.1",
+    "mongoose": "^5.11.18",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
   "description": "My portfolio website for COMP229",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KSheladeeya/COMP229-MyPortfolioWebsite.git"
