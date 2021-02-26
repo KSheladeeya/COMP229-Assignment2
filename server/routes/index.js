@@ -50,17 +50,22 @@ router.get('/services', indexController.displayServicesPage);
 /* GET Contact Us page. */
 router.get('/contact', indexController.displayContactPage);
 
-/* POST Contact Us page. */
-router.post('/contact', function(req, res, next) {
-  firstName = req.body.fname;
-  lastName = req.body.lname;
-  contactNumber = req.body.phone;
-  emailId = req.body.email;
-  message = req.body.msg;
-  res.redirect('/home');
-}); 
+/* POST route for processing Contact Us page. */
+router.post('/contact', indexController.processContactPage);
 
-// router.post('/contact', indexController.processContactPostPage);
+/* GET Route for displaying the Login page */
+router.get('/login',indexController.displayLoginPage);
 
+/* POST Route for processing Login page*/
+router.post('/login', indexController.processLoginPage);
+
+/* GET Route for displaying the Register page */
+router.get('/register',indexController.displayRegisterPage);
+
+/* POST Route for processing Register page*/
+router.post('/register', indexController.processRegisterPage);
+
+/* GET Route to perform UserLogout */
+router.get('/logout', indexController.performLogout);
 
 module.exports = router;
