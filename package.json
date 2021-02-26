@@ -1,6 +1,6 @@
 {
-  "name": "comp229-w21-myportfolioapp",
-  "version": "0.0.2",
+  "name": "comp229-w21-myportfolioappwithauthentication",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
@@ -21,6 +21,18 @@
     "mongoose": "^5.11.18",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
-  
+  },
+  "description": "my portfolion application with authentication",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSheladeeya/COMP229-Assignment2.git"
+  },
+  "author": "Keyur Sheladeeya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KSheladeeya/COMP229-Assignment2/issues"
+  },
+  "homepage": "https://github.com/KSheladeeya/COMP229-Assignment2#readme"
 }
