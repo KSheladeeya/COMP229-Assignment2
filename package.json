@@ -21,17 +21,6 @@
     "mongoose": "^5.11.18",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  },
-  "description": "My portfolio website for COMP229",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KSheladeeya/COMP229-MyPortfolioWebsite.git"
-  },
-  "author": "Keyur Sheladeeya",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KSheladeeya/COMP229-MyPortfolioWebsite/issues"
-  },
-  "homepage": "https://github.com/KSheladeeya/COMP229-MyPortfolioWebsite#readme"
+  }
+  
 }
