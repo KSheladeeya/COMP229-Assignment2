@@ -5,3 +5,24 @@
 .project-div {padding-left:50px;}
 .contact-detail {margin:15px 0 15px 0}
 .card .card-img-top.happiness {height: 340px;}
+#main {
+    overflow:auto;
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+#main-contact {
+    overflow:auto;
+    padding-bottom:165px; /* this needs to be bigger than footer height*/
+}
+
+#main-auth {
+    overflow:auto;
+    padding-bottom:207px; /* this needs to be bigger than footer height*/
+}
+
+#main-register {
+    overflow:auto;
+    padding-bottom:59px; /* this needs to be bigger than footer height*/
+}
+  
+   
