@@ -12,7 +12,7 @@
 <%- include ../partials/main_nav.ejs %>
 
 
-<div class="container">
+<div id="main-add-edit-contact" class="container">
     <div class="row">
 
         <div class="offset-md-3 col-md-6">
@@ -24,7 +24,7 @@
                     id="nameTextField"
                     placeholder="Enter the Name"
                     name="name" 
-                    value="<%= book.name %>"
+                    value="<%= contact.name %>"
                     required>
                 </div>
 
@@ -34,7 +34,7 @@
                     id="numberTextField"
                     placeholder="Enter the Mobile Number"
                     name="number" 
-                    value="<%= book.number %>"
+                    value="<%= contact.number %>"
                     required>
                 </div>
 
@@ -44,14 +44,17 @@
                     id="emailIdTextField"
                     placeholder="Enter the Email Id"
                     name="email_id" 
-                    value="<%= book.email_id %>"
+                    value="<%= contact.email_id %>"
                     required>
                 </div>
 
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i>Submit</button>
-                
-                    <a href="/contact-list" class="btn btn-warning">
+
+                <a href="/contact-list/delete/<%= contact.id %>" class="btn btn-danger btn">
+                                    <i class="fas fa-trash-alt"></i>Delete</a>
+
+               <a href="/contact-list" class="btn btn-warning">
                         <i class="fas fa-undo"></i> Cancel </a>
                         
             </form>

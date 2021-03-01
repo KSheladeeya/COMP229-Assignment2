@@ -1,6 +1,18 @@
+/*
+
+* File name: contact.js (controllers file)
+* Student name: Keyur Sheladeeya
+* Student Id: 301167493
+* Date: 25-02-2021 (DD-MM-YYYY)
+
+*/
+
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
+
+let jwt = require('jsonwebtoken');
 
 // create a reference to the model
 let Contact = require('../models/contact');
@@ -14,12 +26,13 @@ module.exports.displayContactList = (req,res,next)=>{
         else
         {
             //console.log(ContactList);
+
             res.render('contact/list',
             {title: "Contacts",
             ContactList: contactList, 
             displayName: req.user ? req.user.displayName : ''});
         }
-    });
+    }).sort({"name":1})
 }
 
 module.exports.displayAddPage = (req,res,next)=>{
@@ -63,7 +76,7 @@ module.exports.displayEditPage = (req,res,next)=>{
             // show the edit view 
             res.render('contact/edit', 
             { title: 'Edit Contact', 
-            book: contactToEdit, 
+            contact: contactToEdit, 
             displayName: req.user ? req.user.displayName : ''});
         }
     });

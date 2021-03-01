@@ -1,3 +1,14 @@
+/*
+
+* File name: user.js (models file)
+* Student name: Keyur Sheladeeya
+* Student Id: 301167493
+* Date: 24-02-2021 (DD-MM-YYYY)
+
+*/
+
+
+
 // require modules for the User Model
 
 let mongoose = require('mongoose');

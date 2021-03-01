@@ -4,10 +4,16 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
+let cors = require('cors');
 
 // modules for authentication
 let session = require('express-session');
 let passport = require('passport');
+
+let passportJWT = require('passport-jwt');
+let JWTStrategy = passportJWT.Strategy;
+let ExtractJWT = passportJWT.ExtractJwt;
+
 let passportLocal = require('passport-local');
 let localStrategy = passportLocal.Strategy;
 let flash = require('connect-flash');
@@ -71,9 +77,26 @@ passport.use(User.createStrategy());
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+let jwtOptions = {};
+jwtOptions.jwtFromRequest = ExtractJWT.fromAuthHeaderAsBearerToken(); // Bearer token is used to say you're logged in or not
+jwtOptions.secretOrKey = DB.Secret; // here the we didn't have any suggestions so if any error occurs please check here (week 6 last video)
+
+let strategy = new JWTStrategy(jwtOptions, (jwt_payload, done) => {
+  User.findById(jwt_payload.id)
+   .then(user => {
+      return done(null, user);
+   })
+   .catch(err => {
+     return done(err, false);
+   });
+});
+
+passport.use(strategy); //activated above part
+
+
+// routing
 // app.use('/book-list', booksRouter);
 app.use('/contact-list', contactsRouter);
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

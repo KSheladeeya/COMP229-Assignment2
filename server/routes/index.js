@@ -13,25 +13,6 @@ let router = express.Router();
 
 let indexController = require('../controllers/index');
 
-/* default values for first time home page */
-/* let firstName = 'Keyur';
-  let lastName = 'Sheladeeya';
-  let contactNumber = '+91 9725676845';
-  let emailId = 'kshelade@my.centennialcollege.ca';
-  let message = 'Be happy for this moment !!';  */
-
-/* GET home page. */
-/* router.get('/', function(req, res, next) {
-  res.render('index', { 
-    title: 'Home',
-    firstName: firstName,
-    lastName: lastName,
-    contactNumber: contactNumber,
-    emailId: emailId,
-    message: message
-  });
-}); */
-
 /* GET home page. */
 router.get('/', indexController.displayHomePage);
 

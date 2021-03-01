@@ -24,5 +24,10 @@
     overflow:auto;
     padding-bottom:59px; /* this needs to be bigger than footer height*/
 }
+
+#main-add-edit-contact {
+    overflow:auto;
+    padding-bottom:161px; /* this needs to be bigger than footer height*/
+}
   
    
